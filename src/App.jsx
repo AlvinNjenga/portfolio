@@ -1,13 +1,16 @@
-import Home from "./components/Home";
-import Navigation from "./components/Navigation";
+import '@mantine/core/styles.css';
+
+import { MantineProvider } from '@mantine/core';
+
+import HomePage from "./pages/HomePage"
 
 const App = () => {
+
   return (
-    <div className="container w-full max-w-screen-lg min-h-screen absolute top-0 left-[50%] -translate-x-[50%] px-4 py-0 overflow-hidden">
-      <Navigation />
-      <Home />
-    </div>
-  )                  
+    <MantineProvider withGlobalStyles withNormalizeCSS>
+      <HomePage />
+    </MantineProvider>
+  )
 }
 
-export default App;
+export default App
