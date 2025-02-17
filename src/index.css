@@ -5,4 +5,6 @@
     --color-bgColor: #0A192F;
     --color-primaryColor: #64FFDA;
     --color-textColor: #8892B0;
+    --font-dm-mono-regular: "DM Mono", monoospace;
+    --breakpoint-xs: 30rem;
 }

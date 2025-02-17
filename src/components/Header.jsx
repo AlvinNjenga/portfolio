@@ -1,13 +1,21 @@
+import { IconHexagonLetterA } from "@tabler/icons-react";
+
+const links = [
+  { href: '#about', label: 'About' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#work', label: 'Work' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#contact', label: 'Contant' },
+]
+
 const Header = () => {
   return (
-    <nav className="flex h-[10vh] bg-bgColor text-primaryColor justify-between">
-        <h1>My Portfolio</h1>
-        <div className="text-textColor" >
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#work">Work</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
+    <nav className="flex h-[100px] bg-bgColor font-dm-mono-regular px-10 text-textColor justify-between items-center">
+        <IconHexagonLetterA size={48} color="#64FFDA" stroke={1} />
+        <div className="md:flex gap-8 text-sm hidden">
+          {links.map((link, index) => (
+            <a key={index} href={link.href} className="hover:text-primaryColor">{link.label}</a>
+          ))}
         </div>
     </nav>
   )
