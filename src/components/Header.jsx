@@ -1,4 +1,5 @@
 import { IconHexagonLetterA } from "@tabler/icons-react";
+import Sidebar from "./Sidebar";
 
 const links = [
   { href: '#about', label: 'About' },
@@ -17,6 +18,7 @@ const Header = () => {
             <a key={index} href={link.href} className="hover:text-primaryColor">{link.label}</a>
           ))}
         </div>
+        <Sidebar />
     </nav>
   )
 }
