@@ -1,8 +1,15 @@
-import { useDisclosure } from '@mantine/hooks';
-import { Drawer, Button } from '@mantine/core';
+import { useDisclosure} from '@mantine/hooks';
+import { Drawer, Button, useMatches } from '@mantine/core';
+import { IconX } from '@tabler/icons-react';
+import '../index.css';
 
 const Sidebar = () => {
   const [opened, { open, close }] = useDisclosure(false);
+
+  const size = useMatches({
+    base: '70%',
+    xs: 'sm'
+  })
 
   return (
     <div className="md:hidden">
@@ -10,9 +17,13 @@ const Sidebar = () => {
         position='right'
         opened={opened}
         onClose={close}
-        title="Authentication"
         overlayProps={{ opacity: 0.8, blur: 4 }}
-        size="sm"
+        size={size}
+        className='mr-4'
+        closeButtonProps={{
+          icon: <IconX size={72} color='#64FFDA' strokes={1.5} />,
+          size: 'xl'
+        }}
       >
         {/* Drawer content */}
         <p>Sidebar content</p>

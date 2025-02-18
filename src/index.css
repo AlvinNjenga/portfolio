@@ -8,3 +8,15 @@
     --font-dm-mono-regular: "DM Mono", monoospace;
     --breakpoint-xs: 30rem;
 }
+
+.mantine-Drawer-content {
+    background-color: var(--color-bgColor)!important;
+}
+
+.mantine-Drawer-header {
+    background-color: var(--color-bgColor)!important;
+}
+
+.mantine-Drawer-close:hover {
+    background-color: var(--color-bgColor)!important;
+}
