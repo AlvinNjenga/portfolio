@@ -1,10 +1,11 @@
 import { useDisclosure} from '@mantine/hooks';
-import { Drawer, Button, useMatches } from '@mantine/core';
-import { IconX } from '@tabler/icons-react';
+import { Drawer, Burger, useMatches } from '@mantine/core';
+// import { IconX } from '@tabler/icons-react';
 import '../index.css';
+import { navLinks } from '../constants/links';
 
 const Sidebar = () => {
-  const [opened, { open, close }] = useDisclosure(false);
+  const [opened, { close, toggle }] = useDisclosure(false);
 
   const size = useMatches({
     base: '70%',
@@ -20,18 +21,36 @@ const Sidebar = () => {
         overlayProps={{ opacity: 0.8, blur: 4 }}
         size={size}
         className='mr-4'
-        closeButtonProps={{
-          icon: <IconX size={72} color='#64FFDA' strokes={1.5} />,
-          size: 'xl'
+        hiddenFrom='md'
+        closeButtonProps={{ hidden: true }}
+        styles={{ 
+          header: { display: 'none'},
+          content: {
+            display: 'flex'
+          },
+          // TODO: Remove this to a style class.
+          body: { 
+            marginTop: "100px",
+            color: "#CCD6F6",
+            display: "flex",
+            flexDirection: "column",
+            fontFamily: "DM Mono",
+            width: "100%",
+            justifyContent: "space-around"
+          }
         }}
       >
-        {/* Drawer content */}
-        <p>Sidebar content</p>
+        {navLinks(true)}
       </Drawer>
 
-      <Button variant="default" onClick={open}>
-        Open Drawer
-      </Button>
+      <Burger
+        color='#64FFDA'
+        opened={opened}
+        onClick={toggle}
+        aria-label="Open navigation"
+        size='lg'
+        styles={{ root: { position: 'relative', zIndex: "10000" } }}
+      />
     </div>
   );
 }

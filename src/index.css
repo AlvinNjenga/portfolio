@@ -5,7 +5,9 @@
     --color-bgColor: #0A192F;
     --color-primaryColor: #64FFDA;
     --color-textColor: #8892B0;
+    --color-lightText: "#ccd6f6";
     --font-dm-mono-regular: "DM Mono", monoospace;
+    --font-sans: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
     --breakpoint-xs: 30rem;
 }
 
@@ -19,4 +21,9 @@
 
 .mantine-Drawer-close:hover {
     background-color: var(--color-bgColor)!important;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
 }
