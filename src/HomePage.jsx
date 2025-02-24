@@ -5,6 +5,7 @@ import Social from "./components/Social";
 import About from "./sections/About";
 import WorkExperience from "./sections/WorkExperience";
 import FeaturedProjects from "./sections/FeaturedProjects";
+import Contact from "./sections/Contact";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
         <About />
         <WorkExperience />
         <FeaturedProjects />
+        <Contact />
       </main>
       <Email />
       <Social />

@@ -51,7 +51,7 @@ const FeaturedProjects = () => {
                             <li>React</li>
                             <li>TailwindCSS</li>
                             <li>Express</li>
-                            <li>HTML</li>
+                            <li>Docker</li>
                         </ul>
                     </div>
                 </div>
