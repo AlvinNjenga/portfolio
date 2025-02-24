@@ -11,6 +11,8 @@
     --breakpoint-xs: 30rem;
 }
 
+/* Mantine overrides */
+
 .mantine-Drawer-content {
     background-color: var(--color-bgColor)!important;
 }
@@ -23,7 +25,40 @@
     background-color: var(--color-bgColor)!important;
 }
 
+/* Layout & Global Styles */
 section {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+/* About Section */
+
+.profile-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #5acfbd;
+    top: 14px;
+    left: 14px;
+    z-index: -1;
+}
+
+.profile-pic {
+    position: relative;
+    z-index: 1;
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+}
+
+.skill-list li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.skill-list li::before {
+    content: "▹";
+    position: absolute;
+    color: #5acfbd;
+    left: 0;
 }
