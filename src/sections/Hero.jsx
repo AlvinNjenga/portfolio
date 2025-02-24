@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
     return (
-        <section id="hero" className='flex overflow-hidden font-dm-mono-regular'>
+        <section id="hero" className='flex overflow-hidden font-dm-mono-regular !pb-0'>
             <div>
                 <h1 className='text-primaryColor text-lg'>Hi, my name is</h1>
                 <h2 className="text-[#ccd6f6] text-[4.25rem] font-extrabold font-sans leading-16 my-8">Alvin Njenga.</h2>

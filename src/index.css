@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import '@mantine/core/styles.css';
 
+/* Layout & Global Styles */
+
 @theme {
     --color-bgColor: #0A192F;
     --color-primaryColor: #64FFDA;
@@ -9,6 +11,17 @@
     --font-dm-mono-regular: "DM Mono", monoospace;
     --font-sans: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
     --breakpoint-xs: 30rem;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #495670 var(--color-bgColor);
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0px;
 }
 
 /* Mantine overrides */
@@ -23,12 +36,6 @@
 
 .mantine-Drawer-close:hover {
     background-color: var(--color-bgColor)!important;
-}
-
-/* Layout & Global Styles */
-section {
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 /* About Section */
@@ -61,4 +68,57 @@ section {
     position: absolute;
     color: #5acfbd;
     left: 0;
+}
+
+/* Work experience section */
+
+.m_539e827b {
+    border-radius: 0!important;
+    border-color: #233544!important;
+    border-right-width: 2px!important;
+
+}
+
+.m_539e827b:where([data-active]) {
+    border-color: #5acfbd!important;
+    color: #5acfbd!important;
+    transition: all, .2s ease-in-out!important;
+}
+
+.m_539e827b:hover {
+    background-color: #112240;
+}
+
+.experience-tab-content ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.experience-tab-content ul li::before {
+    content: "▹";
+    position: absolute;
+    color: #5acfbd;
+    left: 0;
+    font-size: 18px;
+}
+
+/* Featured Projects Section */
+
+/* This property below is the parent of the wrapper. */
+.faetured-project-image {
+    background-color: var(--color-bgColor);
+}
+
+.featured-project-image-wrapper {
+    background-color: #64ffda;
+}
+
+.featured-project-image-wrapper img {
+    position: relative;
+    z-index: 1;
+    filter: grayscale(100%) brightness(90%);
+    mix-blend-mode: multiply;
+    transition: all, .2s ease-in-out;
+    object-fit: fill;
 }

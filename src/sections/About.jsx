@@ -19,6 +19,8 @@ const About = () => {
                   <li>Typescript</li>
                   <li>.NET</li>
                   <li>GCP</li>
+                  <li>Docker</li>
+                  <li>AWS</li>
                 </ul>
             </div>
             <div className="max-w-[300px] about-me-picture">
