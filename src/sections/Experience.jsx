@@ -1,11 +1,12 @@
 import SectionHeader from "../components/SectionHeader";
 import { Tabs } from '@mantine/core';
+import { useMediaQuery } from "@mantine/hooks";
 import '../index.css';
 
 
-const WorkExperience = () => {
+const Experience = () => {
   return (
-    <section className="!max-w-[700px]">
+    <section id="experience" className="!max-w-[700px]">
       <SectionHeader title="Where I've Worked" number="02" />
       <WorkTabs />
     </section>
@@ -15,20 +16,23 @@ const WorkExperience = () => {
 
 
 const WorkTabs = () => {
+  const isMobile = useMediaQuery('(max-width: 640px)');
+  const orientation = isMobile ? 'horizontal' : 'vertical';
+
   return (
     <Tabs
       defaultValue="freelance"
-      orientation="vertical"
+      orientation={orientation}
       className="text-textColor text-sm"
     >
       <Tabs.List
-        className="text-sm font-dm-mono-regular max-h-[102px]"
+        className="text-sm font-dm-mono-regular max-h-[102px] max-w-[322px] !flex-nowrap"
       >
         <Tabs.Tab value="freelance">Freelance</Tabs.Tab>
         <Tabs.Tab value="merkle">Merkle</Tabs.Tab>
         <Tabs.Tab value="hen">Hen Creative</Tabs.Tab>
       </Tabs.List>
-      <div className="text-lg w-full ml-2.5 p-1.5">
+      <div className="text-lg w-full ml-2.5 p-1.5 sm:pt-3.5">
         <Tabs.Panel value="freelance">
           <div className="experience-tab-content">
             <h3 className="font-semibold text-[#ccd6f6]">Freelance &nbsp;
@@ -76,4 +80,4 @@ const WorkTabs = () => {
   );
 }
 
-export default WorkExperience;
+export default Experience;

@@ -40,7 +40,7 @@ const Sidebar = () => {
           }
         }}
       >
-        {navLinks(true)}
+        {navLinks(true, close)}
       </Drawer>
 
       <Burger

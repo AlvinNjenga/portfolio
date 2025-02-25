@@ -1,6 +1,6 @@
-const Email = () => {
+const EmailLink = () => {
   return (
-    <div className="flex items-center font-dm-mono-regular fixed bottom-40 -right-[7.5rem] text-textColor rotate-90 gap-6 bg-bgColor">
+    <div className="hidden md:flex items-center font-dm-mono-regular fixed bottom-40 lg:-right-[7.5rem] -right-[9rem] text-textColor rotate-90 gap-6 bg-bgColor">
         <a href="mailto:alvinnjenga@gmail.com" className="text-sm hover:text-primaryColor hover:-translate-x-1 transition-transform duration-300 ">
             alvinnjenga@gmail.com
         </a>
@@ -9,4 +9,4 @@ const Email = () => {
   )
 }
 
-export default Email;
+export default EmailLink;

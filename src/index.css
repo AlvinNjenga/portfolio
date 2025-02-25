@@ -16,12 +16,29 @@
 html {
     scrollbar-width: thin;
     scrollbar-color: #495670 var(--color-bgColor);
+    scroll-behavior: smooth;
 }
 
 section {
     max-width: 1000px;
     margin: 0 auto;
     padding: 100px 0px;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0px;
+    }
+}
+
+.hover-button {
+    transition: all, ease-in-out;
+    transition-duration: 300ms;
+}
+
+.hover-button:hover {
+    box-shadow: 4px 4px 0 0 #5acfbd;
+    transform: translate(-4px, -4px);
 }
 
 /* Mantine overrides */
@@ -38,6 +55,21 @@ section {
     background-color: var(--color-bgColor)!important;
 }
 
+/* Header section */
+
+.logo {
+    color: #64ffda;
+    transition: all, .3s ease-in-out;
+}
+
+.logo:hover {
+    fill: #64ffda;
+    color: black!important;
+    transform: translate(5px 1px);
+    width: 50px;
+    height: 50px;
+}
+
 /* About Section */
 
 .profile-wrapper::after {
@@ -49,6 +81,21 @@ section {
     top: 14px;
     left: 14px;
     z-index: -1;
+    border-radius: 4px;
+    transition: all, 0.3s ease-in-out;
+}
+
+.profile-wrapper {
+    transition: all, 0.3s ease-in-out, background-color 0s;
+}
+
+.profile-wrapper:hover {
+    transform: translate(-5px, -5px);
+    background-color: transparent;
+}
+
+.profile-wrapper:hover::after {
+    transform: translate(8px, 8px);
 }
 
 .profile-pic {
@@ -56,6 +103,12 @@ section {
     z-index: 1;
     filter: grayscale(100%);
     mix-blend-mode: multiply;
+    transition: all, .6s ease-in-out;
+}
+
+.profile-pic:hover {
+    filter: grayscale(0%);
+    mix-blend-mode: normal;
 }
 
 .skill-list li {
@@ -70,13 +123,11 @@ section {
     left: 0;
 }
 
-/* Work experience section */
+/* Experience section */
 
 .m_539e827b {
     border-radius: 0!important;
     border-color: #233544!important;
-    border-right-width: 2px!important;
-
 }
 
 .m_539e827b:where([data-active]) {

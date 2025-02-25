@@ -1,6 +1,6 @@
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 
-const Social = () => {
+const SocialLink = () => {
   const socialConfig = [
     { link:"https://www.linkedin.com/in/alvin-n-retallack-a635869a/", icon: IconBrandLinkedin },
     { link:"https://github.com/AlvinNjenga", icon: IconBrandGithub }
@@ -13,14 +13,11 @@ const Social = () => {
   ))
 
   return (
-    <div className="flex items-center font-dm-mono-regular fixed bottom-20 -left-[4.5rem] text-textColor -rotate-90 gap-6 bg-bgColor">
+    <div className="hidden md:flex items-center font-dm-mono-regular fixed bottom-20 lg:-left-[4.5rem] -left-[5.5rem] text-textColor -rotate-90 gap-6 bg-bgColor">
         <hr className="border-[2px] w-40 rounded-full bg-textColor" />
         {socialLinks}
     </div>
   )
 }
 
-export default Social;
-
-// hover:text-primaryColor hover:-translate-x-2 transition-transform duration-300
-// href="https://www.linkedin.com/in/alvin-n-retallack-a635869a/"
+export default SocialLink;
