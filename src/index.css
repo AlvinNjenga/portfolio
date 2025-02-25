@@ -41,6 +41,19 @@ section {
     transform: translate(-4px, -4px);
 }
 
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(10vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 0.s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
 /* Mantine overrides */
 
 .mantine-Drawer-content {
@@ -56,6 +69,20 @@ section {
 }
 
 /* Header section */
+
+.navbar-link {
+    opacity: 0;
+    transform: translateY(-2vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 0.s ease-out;
+    will-change: opacity, visibility;
+}
+
+.navbar-link.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
 
 .logo {
     color: #64ffda;
@@ -172,8 +199,14 @@ section {
     mix-blend-mode: multiply;
     transition: all, .2s ease-in-out;
     object-fit: fill;
-}
+    border: 1px solid black;
+} 
 
+.featured-project-image-wrapper:hover img {
+    filter: grayscale(0%) brightness(100%);
+    mix-blend-mode: normal;
+    background-color: transparent;
+}
 
 /* Contact section */
 
