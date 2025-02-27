@@ -29,16 +29,17 @@ const Hero = () => {
 
                 <FadeInSection delay={1200}>
                     <div className="text-textColor text-[clamp(14px,4vw,22px)] font-sans my-8 mb-20">
-                        I&apos;m a passionate software developer specializing in crafting efficient and scalable solutions, deliver top notch
-                        web and mobile applications and offering freelance services that exceed client expectations. Let&apos;s connect and creating something amazing!
+                        I&apos;m a passionate <span className="text-primaryColor">software enthusiast</span> specializing in crafting efficient and scalable solutions, deliver top notch <span className="text-primaryColor">web and mobile applications</span> and offering freelance services that exceed client expectations. <span className="text-primaryColor">Let&apos;s connect</span> and creating something amazing!
                     </div>
                 </FadeInSection>
 
                 <FadeInSection delay={1400}>
-                    <div
-                        className="hover-button justify-self-start !mt-6.5 px-5 py-4 rounded-md font-light border-1 border-primaryColor text-primaryColor font-dm-mono-regular text-[1rem]"
-                    >
-                        Check Out My Resume
+                    <div className="flex justify-center xs:justify-start">
+                        <div
+                            className="hover-button justify-self-start px-5 py-4 rounded-md font-light border-1 border-primaryColor text-primaryColor font-dm-mono-regular text-[1rem]"
+                        >
+                            Check Out My Resume
+                        </div>
                     </div>
                 </FadeInSection>
             </div>

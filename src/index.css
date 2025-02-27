@@ -148,7 +148,7 @@ section {
     transition: all, .6s ease-in-out;
 }
 
-.profile-pic:hover {
+.profile-wrapper:hover .profile-pic {
     filter: grayscale(0%);
     mix-blend-mode: normal;
 }
@@ -170,6 +170,7 @@ section {
 .m_539e827b {
     border-radius: 0!important;
     border-color: #233544!important;
+    font-size: 16px!important;
 }
 
 .m_539e827b:where([data-active]) {
@@ -210,7 +211,7 @@ section {
 .featured-project-image-wrapper img {
     position: relative;
     z-index: 1;
-    filter: grayscale(100%) brightness(90%);
+    filter: grayscale(100%) brightness(80%);
     mix-blend-mode: multiply;
     transition: all, .2s ease-in-out;
     object-fit: fill;
