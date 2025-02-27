@@ -1,3 +1,4 @@
+import { useMediaQuery } from "@mantine/hooks";
 import Hero from "./sections/Hero";
 import EmailLink from "./components/EmailLink";
 import SocialLink from "./components/SocialLink";
@@ -7,29 +8,33 @@ import Experience from "./sections/Experience";
 import FeaturedProjects from "./sections/FeaturedProjects";
 import Contact from "./sections/Contact";
 import FadeInSection from "./components/FadeInSection";
+import Container from "./components/Container";
 
 const HomePage = () => {
+  const isMobile = useMediaQuery('(max-width: 640px)');
+
   return (
     <>
       <Header />
       <EmailLink />
       <SocialLink />
-      <main className="px-8 sm:px-12 md:px-24 lg:px-40 max-w-[1600px]">
+      <Container>
         <Hero />
 
-        <FadeInSection>
+        {/* Prevent early fade-in on mobile */}
+        <FadeInSection delay={isMobile ? 600 : 0}>
           <About />
         </FadeInSection>
 
         <FadeInSection>
           <Experience />
         </FadeInSection>
-        
+
         <FadeInSection>
           <FeaturedProjects />
         </FadeInSection>
         <Contact />
-      </main>
+      </Container>
     </>
   )
 }

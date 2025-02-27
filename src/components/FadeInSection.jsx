@@ -1,9 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-const FadeInSection = (props) => {
+const FadeInSection = ({ children, direction = 'up', delay = 0 }) => {
   const [isVisible, setVisible] = useState(false);
   const domRef = useRef();
+
+  console.log(`delay? = ${delay ? "yes": "no "} & delayNo = ${delay}`)
   
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -21,16 +23,19 @@ const FadeInSection = (props) => {
 
   return (
     <div
-      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      className={`fade-${direction}-section ${isVisible ? 'is-visible' : ''}`}
+      style={{  transitionDelay: `${delay}ms` }}
       ref={domRef}
     >
-      {props.children}
+      {children}
     </div>
   );
 }
 
 FadeInSection.propTypes = {
   children: PropTypes.node.isRequired,
+  direction: PropTypes.string,
+  delay: PropTypes.number,
 };
 
 export default FadeInSection;
