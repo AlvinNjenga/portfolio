@@ -6,7 +6,7 @@ import { navLinks } from "../constants/links";
 
 const Header = () => {
   return (
-    <nav className="flex h-[100px] bg-bgColor font-dm-mono-regular px-10 text-textColor justify-between items-center">
+    <nav className="flex h-[100px] font-dm-mono-regular px-10 text-textColor justify-between items-center">
       <div className="logo-wrapper relative"> 
         <IconHexagonLetterA className="logo z-[3] hover:-translate-y-1.5" size={48} stroke={1} />
       </div>

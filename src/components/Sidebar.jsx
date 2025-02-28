@@ -30,7 +30,6 @@ const Sidebar = () => {
           },
           // TODO: Remove this to a style class.
           body: { 
-            marginTop: "100px",
             color: "#CCD6F6",
             display: "flex",
             flexDirection: "column",

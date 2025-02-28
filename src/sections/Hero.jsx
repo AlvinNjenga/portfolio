@@ -1,5 +1,6 @@
 import Typewriter from "typewriter-effect";
 import FadeInSection from "../components/FadeInSection";
+import Resume from "../assets/AlvinNjenga-CV-2025.pdf";
 
 const Hero = () => {
     return (
@@ -35,11 +36,13 @@ const Hero = () => {
 
                 <FadeInSection delay={1400}>
                     <div className="flex justify-center xs:justify-start">
-                        <div
-                            className="hover-button justify-self-start px-5 py-4 rounded-md font-light border-1 border-primaryColor text-primaryColor font-dm-mono-regular text-[1rem]"
-                        >
-                            Check Out My Resume
-                        </div>
+                        <a href={Resume} target="_blank" download rel="noopener noreferrer">
+                            <div
+                                className="hover-button justify-self-start px-5 py-4 rounded-md font-light border-1 border-primaryColor text-primaryColor font-dm-mono-regular text-[1rem]"
+                            >
+                                Check Out My Resume
+                            </div>
+                        </a>
                     </div>
                 </FadeInSection>
             </div>

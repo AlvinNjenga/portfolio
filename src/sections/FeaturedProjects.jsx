@@ -7,7 +7,7 @@ import FadeInSection from "../components/FadeInSection";
 const FeaturedProjects = () => {
     return (
         <section id="projects">
-            <SectionHeader title="Some Things I've Built" number="03" />
+            <SectionHeader title="Some Projects" number="03" />
             <div className="featured-projects">
 
                 <FadeInSection delay={200}>
