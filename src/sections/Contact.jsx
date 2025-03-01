@@ -1,5 +1,3 @@
-// TODO: Copy the button on the panel to the left. 
-
 const Contact = () => {
   return (
     <section id="contact" className="!max-w-[600px] flex justify-center items-center text-center flex-col">

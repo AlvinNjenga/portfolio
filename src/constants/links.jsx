@@ -7,10 +7,6 @@ const links = [
   { href: '#contact', label: 'Contact' },
 ]
 
-// TODO: add navbar-link and isVisible to the a tag with a delay effect
-// for each one, where the delay is based on the index of the link for a 
-// staggered effect
-
 const navLinks = (col, callback) => {
   const triggerCallback = () => {
     if (callback) callback()

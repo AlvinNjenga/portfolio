@@ -5,8 +5,6 @@ const FadeInSection = ({ children, direction = 'up', delay = 0 }) => {
   const [isVisible, setVisible] = useState(false);
   const domRef = useRef();
 
-  console.log(`delay? = ${delay ? "yes": "no "} & delayNo = ${delay}`)
-  
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => { 
