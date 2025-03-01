@@ -8,7 +8,7 @@ const Contact = () => {
             href="mailto:alvinnjenga@gmail.com"
             referrerPolicy="noopener noreferrer"
             target="_blank"
-            className="hover-button mt-10 px-7 py-5 rounded-md font-light border-3 border-primaryColor text-primaryColor font-dm-mono-regular text-[1rem]"
+            className="bg-bgColor hover-button mt-10 px-7 py-5 rounded-md font-light border-3 border-primaryColor text-primaryColor font-dm-mono-regular text-[1rem]"
         >
             Say Hello!
         </a>
