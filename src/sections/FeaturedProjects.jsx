@@ -25,7 +25,7 @@ const FeaturedProjects = () => {
                             </div>
                             <ul className="project-tech-stack flex relative z-[2] mt-6 mb-2.5 gap-2.5 text-sm font-dm-mono-regular text-primaryColor md:justify-end">
                                 <li>Next.js</li>
-                                <li>TailwindCSS</li>
+                                <li>Tailwind</li>
                                 <li>NextAuth</li>
                                 <li>MongoDB</li>
                             </ul>
