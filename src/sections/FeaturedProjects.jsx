@@ -13,13 +13,21 @@ const FeaturedProjects = () => {
                 <FadeInSection delay={200}>
                     <div className="featured-project relative grid grid-cols-[repeat(12,1fr)] mb-24">
                         <div className="featured-project-image flex col-[1/-1] md:col-[1/8] row-[1/-1]">
-                            <div className="featured-project-image-wrapper flex max-w-[700px]">
-                                <img src={PromptApp} width="700px" height="auto" alt="Prompt App Image" />
-                            </div>
+                            <a 
+                                className="featured-project-image-wrapper flex max-w-[700px]"
+                                href="https://prompts-app-two.vercel.app"
+                                target="_blank"
+                            >
+                                    <img src={PromptApp} width="700px" height="auto" alt="Prompt App Image" />
+                            </a>
                         </div>
                         <div className="featured-project-content  bg-[rgba(17,34,64,0.9)] z-10 p-10 row-[1/-1] md:p-0 md:text-right col-[1/-1] md:col-[6/-1] md:z-[1] md:bg-transparent ">
                             <p className="py-2.5 text-sm font-dm-mono-regular text-primaryColor">Featured Project</p>
-                            <h3 className="text-2xl font-semibold mb-5 text-[#CCD6F6] relative z-[2]">AI Prompt App</h3>
+                            <a href="https://prompts-app-two.vercel.app/" target="_blank">
+                                <h3 className="text-2xl font-semibold mb-5 text-[#CCD6F6] relative z-[2]">
+                                    AI Prompt App
+                                </h3>
+                            </a>
                             <div className="p-0 z-[2] relative text-textColor leading-[1.2] md:bg-[#112240] md:p-6">
                                 <p>An open-source AI prompting tool for the modern world, enabling users to discover, create and share creative prompts. Built with <span className="text-primaryColor">Next.js 14</span> with <span className="text-primaryColor">NextAuth</span> for Google authentication, prompt sharing between users and profile management. Uses <span className="text-primaryColor">TailwindCSS</span> for easier modern styling.</p>
                             </div>
