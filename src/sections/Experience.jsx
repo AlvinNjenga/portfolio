@@ -34,7 +34,7 @@ const WorkTabs = () => {
         <Tabs.Panel value="freelance">
           <div className="experience-tab-content">
             <h3 className="font-semibold text-[#ccd6f6]">Freelance <span className="text-primaryColor">Full Stack Developer</span></h3>
-            <p className="mb-6 text-sm font-dm-mono-regular">October 2023 - Current</p>
+            <p className="mb-6 text-sm font-dm-mono-regular">February 2024 - Current</p>
             <ul className="text-[16px] font-sans leading-5">
               <li><span className="text-primaryColor">Freelancing: </span>Stepping into the role of an independent contractor, I developed skills beyond the technical aspects of my work with a focus on project planning, successful on-time delivery and client satisfaction. </li>
               <li><span className="text-primaryColor">Project management: </span> Ensuring project deadlines are met, a continuous feedback loop at important milestones and  collaboration with designers/developers. </li>
@@ -48,7 +48,7 @@ const WorkTabs = () => {
             <h3 className="font-semibold text-[#ccd6f6]">Software Developer &nbsp;
               <span className="text-primaryColor">@ Merkle (Dentsu)</span>
             </h3>
-            <p  className="mb-6 text-sm font-dm-mono-regular">April 2019 - June 2023</p>
+            <p  className="mb-6 text-sm font-dm-mono-regular">April 2019 - July 2023</p>
             
             <ul className="text-[16px] font-sans leading-5">
               <li><span className="text-primaryColor">Core role: </span>Worked on an in-house reporting and QA application designed to provide digital marketers with data-driven warnings and suggestions for managing accounts using user-defined criteria. Played an integral role in development of this greenfield project - contributing to planning and design decisions</li>
